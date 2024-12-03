@@ -1,0 +1,69 @@
+/* Base dự án */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Khôi phục lại font size theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0.5rem;
+}
+
+/* =====================common==================== */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =====================header==================== */
+
+.header .body {
+  display: flex;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: rgb(174, 165, 165);
+  text-align: center;
+  padding: 8px 21px;
+}
+
+.nav a:hover {
+  color: rgb(43, 41, 41);
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+  line-height: 28px;
+}
+
+.logo {
+  font-size: 4.2rem;
+  font-family: "Fanwood Text", serif;
+  color: #0a429b;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .logo {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #ffdee9;
+    background-image: linear-gradient(0deg, #ec8fb3 0%, #b5fffc 100%);
+  }
+}
